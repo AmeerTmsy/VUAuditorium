@@ -38,7 +38,7 @@ header.show {
 #home .background {
     background-image: url('https://res.cloudinary.com/dhs5i1k5f/image/upload/f_auto,q_auto/v1/VUA/ab7fn3ppvcho5dr8obso'); /* Replace with your image path */
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-attachment: fixed;
     position: absolute;
     top: 0;
