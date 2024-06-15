@@ -1,0 +1,167 @@
+
+.ms3 a{
+    text-decoration: none;
+}
+.keepSide{
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+/* Initially hide the header */
+header {
+    background-color: #bdbdbd;
+    position: fixed;
+    top: -100px; /* Move header off-screen */
+    width: 100%;
+    transition: top 0.45s ease-in-out;
+    z-index: 1000;
+}
+
+/* Class to show the header */
+header.show {
+    top: 0; /* Move header to stick to the top */
+}
+.imgs{
+    height: 3rem;
+    width: 4.5rem;
+}
+
+/* Apply the background image to a separate div within the section */
+#home {
+    position: relative;
+    height: 99.99vh; /* Full height */
+    width: 100%;
+    overflow: hidden;
+}
+
+#home .background {
+    background-image: url('https://res.cloudinary.com/dhs5i1k5f/image/upload/f_auto,q_auto/v1/VUA/ab7fn3ppvcho5dr8obso'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+#home .content {
+    position: relative;
+    z-index: 2;
+    color: white; /* For any text you may have */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.ms2{
+    width: 100%;
+    height: 90vh;
+}
+
+/* Fading effect on scroll */
+/* body {
+    height: 200vh; // For demonstration purposes, so you can scroll 
+} 
+
+*/
+
+/* -----------About section animation---------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 200vh; /* Increase page height to allow scrolling */
+}
+
+/* Styling for the section */
+.ms2 {
+    height: 100vh;
+    background-color: #cfcece;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon, .iconG{
+    font-size: 1.6em;
+    color: darkblue;
+}
+.iconG{
+    font-size: 1.9em;
+}
+.card-text{
+    font-size: 0.9em ;
+    color: #636363;
+}
+
+.linkA{
+    text-decoration: none;
+    color: beige !important;
+}
+.li-a-i{
+    font-size: 1.4em;
+}
+
+/* Apply animation to the 'moving' elements */
+.moving {
+    opacity: 0; /* Initially hide the elements */
+    transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(50px); /* Move elements down initially */
+}
+
+/* Animation when 'moving' elements are in view */
+.moving.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card {
+    transition: transform 0.5s ease, box-shadow 0.4s ease; /* Smooth transition for the hover effect */
+}
+
+.card:hover {
+    transform: scale(1.1); /* Grow the card evenly on all sides */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add dark shadow on hover */
+}
+
+footer{
+    border-top: 0.3rem solid #575757;
+    background-color:  black;
+}
+
+.contact_list{
+    list-style: none !important;
+}
+
+
+
+/* --------  scrolling bar styling  -------- */
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(83, 83, 83); 
+    border-radius: 10px;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(100, 100, 100); 
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #a7a7a7; 
+}
+/* --------  scrolling bar styling  -------- */
